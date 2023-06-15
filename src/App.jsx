@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import image from "./assets/4K Wallpaper.jpg";
+// import image from "./assets/4K Wallpaper.jpg";
 import locationIcon from "./assets/locationIcon.png";
 
 function App() {
@@ -8,10 +8,6 @@ function App() {
     const apiUrl =
         "https://gnews.io/api/v4/search?q=technology&lang=en&max=10&apikey=";
     const apiKey = "f9442b6ce8092c601193f0eda3b8c24d";
-    // const [publishedAt, setPublishedAt] = useState({
-    //     data: "",
-    //     time: "",
-    // });
 
     useEffect(() => {
         const fetchData = async () => {
@@ -23,9 +19,6 @@ function App() {
         fetchData();
     }, []);
 
-    // const publishedAtData = newsData.map((article) => {
-    //     set
-    // });
     let date;
     let time;
 
@@ -48,9 +41,11 @@ function App() {
                 </div>
                 <h1>{article.title}</h1>
                 <div className="publish-date">
-                    {[date, time] = article.publishedAt.split('T')}
-                    <h5>{date}</h5>
-                    <h5>{time}</h5>
+                    {
+                        [date, time] = article.publishedAt.split('T')
+                    }
+                    {/* <h5>{date}</h5>
+                    <h5>{time}</h5> */}
                 </div>
                 <p>{article.description}</p>
             </section>
