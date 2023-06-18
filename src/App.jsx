@@ -19,13 +19,25 @@ function App() {
         fetchData();
     }, []);
 
-    let date;
-    let time;
+    const formatDate = (time) => {
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        const formattedDate = new Date(time).toLocaleDateString(
+            "en-US",
+            options
+        );
+        return formattedDate;
+    };
+
+    const formatTime = (time) => {
+        const formattedTime = time.split("T")[1].replace("Z", "");
+        return formattedTime;
+    };
 
     const newsDataElement = newsData.map((article, index) => (
         <section className="news-section" key={index}>
             <figure className="news-img">
                 <img src={article.image} alt="" className="img" />
+                <figcaption>form {article.source.name}</figcaption>
             </figure>
             <section className="news-details" key={index}>
                 <div className="location">
@@ -41,11 +53,12 @@ function App() {
                 </div>
                 <h1>{article.title}</h1>
                 <div className="publish-date">
-                    {
-                        [date, time] = article.publishedAt.split('T')
-                    }
-                    {/* <h5>{date}</h5>
-                    <h5>{time}</h5> */}
+                    {article.publishedAt && (
+                        <>
+                            <h5>{formatDate(article.publishedAt)}</h5>
+                            <h5> - {formatTime(article.publishedAt)}</h5>
+                        </>
+                    )}
                 </div>
                 <p>{article.description}</p>
             </section>
