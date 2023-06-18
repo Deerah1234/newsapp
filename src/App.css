@@ -28,6 +28,10 @@ header {
     margin-inline-end: 3rem;
 }
 
+.news-img > figcaption {
+    font-style: italic;
+}
+
 .news-details {
     /* background-color: aqua; */
     padding-block: 2rem;
@@ -35,11 +39,12 @@ header {
 
 .news-details > h1 {
     font-size: 2rem;
-    margin-bottom: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .news-details p {
-    max-width: 500px;
+    /* max-width: 500px; */
     text-align: justify;
 }
 
@@ -71,7 +76,7 @@ header {
 
 .publish-date {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     align-items: center;
 }
 
