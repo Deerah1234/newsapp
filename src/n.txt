@@ -1,2 +1,19 @@
 https://gnews.io/api/v4/search?q=example&lang=en&country=ng&max=10&apikey=f9442b6ce8092c601193f0eda3b8c24d
 https://newsapi.org/v2/top-headlines?country=ng&category=technology&max=10&apiKey=cbcda5c90da24fa09c59e11cec3010a2
+
+
+    // const apiUrl =
+    //     "https://gnews.io/api/v4/search?q=technology&lang=en&max=10&apikey=";
+    // const apiKey = "f9442b6ce8092c601193f0eda3b8c24d";
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const response = await fetch(apiUrl + apiKey);
+    //         const data = await response.json();
+    //         setNewsData([...data.articles]);
+    //     };
+
+    //     fetchData();
+    // }, []);
+
+    // const [newsData, setNewsData] = useState([]);

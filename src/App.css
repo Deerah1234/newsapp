@@ -4,7 +4,12 @@
 }
 
 header {
-    background-color: blue;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border-style: solid;
+    border-color: rgba(194, 224, 255, 0.08);
+    border-width: 0px 0px thin;
+    background-color: rgba(10, 25, 41, 0.8);
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.175);
     padding: 10px;
@@ -17,6 +22,8 @@ header {
 .news-section {
     display: flex;
     margin-top: 4rem;
+    text-decoration: none;
+    color: white;
 }
 
 .img {
@@ -43,9 +50,32 @@ header {
     margin-bottom: 10px;
 }
 
-.news-details p {
+.news-details .news-description {
     /* max-width: 500px; */
     text-align: justify;
+    margin-block-end: 1.5rem;
+}
+
+.news-details .news-story {
+    font-size: 16.5px;
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    color: #748da8;
+
+    transition: all 0.5 ease;
+}
+
+.news-story svg {
+    margin-inline-end: 10px;
+}
+
+.news-story:hover {
+    text-decoration: none;
+}
+
+.news-story:active {
+    opacity: 0.5;
 }
 
 .location {
@@ -60,8 +90,13 @@ header {
     height: 14px;
 }
 
+.location svg {
+    color: #007fff;
+}
+
 .location h4 {
     margin-inline-end: 2rem;
+    color: rgb(178, 186, 194);
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.17em;
@@ -72,14 +107,48 @@ header {
 .location a {
     font-size: 16.5px;
     font-weight: 400;
+    color: #66b2ff;
+
+    transition: all 0.5 ease;
+}
+
+.location a:hover {
+    text-decoration: none;
+}
+
+.location a:active {
+    text-decoration: none;
+    opacity: 0.5;
 }
 
 .publish-date {
     display: flex;
+    color: rgb(178, 186, 194);
+    font-size: 16px;
     margin-bottom: 30px;
     align-items: center;
 }
 
-.publish-date h5:nth-child(1) {
+.publish-date section {
+    display: flex;
+    align-items: center;
+}
+
+.publish-date .date {
     margin-inline-end: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.publish-date .date svg,
+.publish-date .time svg {
+    width: 17px;
+    height: 15px;
+    margin-bottom: 1px;
+    margin-inline: 2px;
+}
+
+.publish-date .time {
+    display: flex;
+    align-items: center;
 }
