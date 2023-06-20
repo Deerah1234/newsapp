@@ -41,17 +41,19 @@ header {
 
 .news-details {
     /* background-color: aqua; */
-    padding-block: 2rem;
+    padding-block: 1rem;
 }
 
 .news-details > h1 {
     font-size: 2rem;
+    max-width: 60rem;
+    text-align: justify;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .news-details .news-description {
-    /* max-width: 500px; */
+    max-width: 60rem;
     text-align: justify;
     margin-block-end: 1.5rem;
 }
@@ -144,7 +146,7 @@ header {
 .publish-date .time svg {
     width: 17px;
     height: 15px;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
     margin-inline: 2px;
 }
 
