@@ -6,7 +6,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Layout from "./components/Layout";
-import NewsDetail from "./pages/NewsDetail";
+import NewsDetail, { loader as newsDetailLoader } from "./pages/NewsDetail";
 import News, { loader as newsLoader } from "./pages/News";
 
 const router = createBrowserRouter(
@@ -15,7 +15,7 @@ const router = createBrowserRouter(
             <Route path="/" loader={newsLoader} element={<News />} />
             <Route
                 path="news/:id"
-                loader={newsLoader}
+                loader={newsDetailLoader}
                 element={<NewsDetail />}
             />
         </Route>
