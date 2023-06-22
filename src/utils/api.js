@@ -1,4 +1,4 @@
-export async function getNews() {
+export async function getNews(id) {
     const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&max=10&apiKey=`;
 
     const apiKey = "cbcda5c90da24fa09c59e11cec3010a2";
@@ -12,5 +12,5 @@ export async function getNews() {
         };
     }
     const data = await res.json();
-    return [...data.articles];
+    return id ? [...data.articles][id] : [...data.articles];
 }
