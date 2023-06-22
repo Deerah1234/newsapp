@@ -1,10 +1,10 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
     return (
         <div className="app-container">
             <header>
-                <h1>NewsApp</h1>
+                <Link to=".">NewsApp</Link>
             </header>
             <main>
                 <Outlet />
