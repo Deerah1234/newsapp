@@ -12,5 +12,5 @@ export async function getNews(id) {
         };
     }
     const data = await res.json();
-    return id ? [...data.articles][id] : [...data.articles];
+    return id ? data.articles[id] : data.articles;
 }
