@@ -17,6 +17,14 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
 }
 
 .news-section {
@@ -24,6 +32,13 @@ header {
     margin-top: 4rem;
     text-decoration: none;
     color: white;
+
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.news-section:hover {
+    transform: translateY(-20px);
 }
 
 .img {
@@ -37,6 +52,8 @@ header {
 
 .news-img > figcaption {
     font-style: italic;
+    font-size: 12px;
+    color: rgb(178, 186, 194);
 }
 
 .news-details {
@@ -45,7 +62,7 @@ header {
 }
 
 .news-details > h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     max-width: 60rem;
     text-align: justify;
     margin-top: 20px;
@@ -60,12 +77,12 @@ header {
 
 .news-details .news-story {
     font-size: 16.5px;
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     text-align: center;
     color: #748da8;
 
-    transition: all 0.5 ease;
+    transition: all 0.3s ease;
 }
 
 .news-story svg {
@@ -94,12 +111,13 @@ header {
 
 .location svg {
     color: #007fff;
+    font-size: 1.1rem;
 }
 
 .location h4 {
     margin-inline-end: 2rem;
     color: rgb(178, 186, 194);
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.17em;
     margin-left: 6px;
@@ -107,8 +125,8 @@ header {
 }
 
 .location a {
-    font-size: 16.5px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: bolder;
     color: #66b2ff;
 
     transition: all 0.5 ease;
@@ -153,4 +171,166 @@ header {
 .publish-date .time {
     display: flex;
     align-items: center;
+}
+
+/*** NewsDetails PAGES ***/
+.news-detail-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    /* background-color: #007fff; */
+
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.news-detail-container button {
+    width: 11rem;
+    border-radius: 1rem;
+}
+
+.news-detail-container .back-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+    color: azure;
+}
+
+.back-button svg {
+    font-size: 18px;
+}
+
+.news-detail-location {
+    display: flex;
+    align-items: center;
+    margin-inline: 2rem;
+    margin-block-end: 0.2rem;
+    margin-top: 2rem;
+    /* background-color: blue; */
+}
+
+/* .news-detail-location img {
+    width: 10px;
+    height: 14px;
+} */
+
+.news-detail-location svg {
+    color: #007fff;
+    font-size: 15px;
+    margin-inline-start: 1.8rem;
+}
+
+.news-detail-location h4 {
+    margin-inline-end: 2rem;
+    color: rgb(178, 186, 194);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.17em;
+    margin-left: 6px;
+    margin-block-start: 1px;
+}
+
+.news-detail-location a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #66b2ff;
+
+    transition: all 0.5 ease;
+}
+
+.news-detail-location a:hover {
+    text-decoration: none;
+}
+
+.news-detail-location a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.news-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-inline: 3rem;
+    /* background-color: #748da8; */
+}
+
+.news-img-container {
+    align-self: center;
+}
+
+.news-img-container figcaption {
+    font-size: 12px;
+    color: rgb(178, 186, 194);
+}
+
+.news-detail-img {
+    width: 1050px;
+    height: 590.625px;
+    border-radius: 1rem;
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+.news-date {
+    display: flex;
+    color: rgb(178, 186, 194);
+    font-size: 16px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.news-date section {
+    display: flex;
+    align-items: center;
+}
+
+.news-date .date {
+    margin-inline-end: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.news-date .date svg,
+.news-date .time svg {
+    width: 17px;
+    height: 15px;
+    margin-bottom: 3px;
+    margin-inline: 2px;
+}
+
+.news-date .time {
+    display: flex;
+    align-items: center;
+}
+
+.news-detail-content {
+    font-size: 19px;
+    line-height: 2.2rem;
+    letter-spacing: 0.3px;
+    margin-top: 2rem;
+    text-align: justify;
+    margin-inline: 3rem;
+}
+
+@-webkit-keyframes videoAnimation {
+    0% {
+        left: 30px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes videoAnimation {
+    0% {
+        left: 30px;
+    }
+
+    to {
+        left: 0;
+    }
 }
