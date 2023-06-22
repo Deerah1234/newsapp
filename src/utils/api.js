@@ -1,12 +1,11 @@
 export async function getNews(id) {
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&max=10&apiKey=`;
-
     const apiKey = "cbcda5c90da24fa09c59e11cec3010a2";
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&max=10&apiKey=${apiKey}`;
 
     // const apiKey = process.env.API_KEY;
     // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&max=10&apiKey=${apiKey}`;
 
-    const res = await fetch(apiUrl + apiKey);
+    const res = await fetch(apiUrl);
     if (!res.ok) {
         throw {
             message: "Failed to fetch News",
