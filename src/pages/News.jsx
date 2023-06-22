@@ -7,6 +7,8 @@ import TodayIcon from "@mui/icons-material/Today";
 import { useLoaderData, Link } from "react-router-dom";
 import { getNews } from "../utils/api";
 
+import "animate.css";
+
 export function loader() {
     return getNews();
 }
@@ -34,12 +36,12 @@ const News = () => {
                 {article.urlToImage ? (
                     <>
                         <img src={article.urlToImage} alt="" className="img" />
-                        <figcaption>form @{article.source.name}</figcaption>
+                        <figcaption>Source: {article.source.name}</figcaption>
                     </>
                 ) : (
                     <>
                         <img src={fallbackImage} alt="" className="img" />
-                        <figcaption>form unsplash-@Nasa</figcaption>
+                        <figcaption>Source: unsplash-@Nasa</figcaption>
                     </>
                 )}
             </figure>
