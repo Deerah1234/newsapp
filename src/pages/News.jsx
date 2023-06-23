@@ -14,23 +14,7 @@ export function loader() {
 }
 
 const News = () => {
-    // const newsData = useLoaderData();
-    const [newsData, setNewsData] = useState([]);
-
-    const apiUrl =
-        "https://gnews.io/api/v4/search?q=technology&lang=en&max=10&apikey=";
-    const apiKey = "f9442b6ce8092c601193f0eda3b8c24d";
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch(apiUrl + apiKey);
-            const data = await response.json();
-            setNewsData([...data.articles]);
-        };
-
-        fetchData();
-    }, []);
-
+    const newsData = useLoaderData();
 
     const formatDate = (time) => {
         const options = { year: "numeric", month: "long", day: "numeric" };
