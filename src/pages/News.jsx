@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import fallbackImage from "../assets/nasa-unsplash.jpg";
 import CategoryIcon from "@mui/icons-material/Category";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
