@@ -42,9 +42,9 @@ npm run dev
 ## Tech Stack
 
 - React.js: A popular JavaScript library for building user interfaces.
-- Vite: A fast build tool for modern web applications.
+- Vite: A fast-build tool for modern web applications.
 - HTML5 and CSS3: Markup and styling of the application.
 - JavaScript: Programming language used for client-side functionality.
 - NewsAPI: A service that provides news articles from various sources.
-- Fetch: A library for making HTTP requests to retrieve news data from the NewsAPI.
+- Fetch: An built-in JavaScript API that allows retrieving news data from the NewsAPI.
 
