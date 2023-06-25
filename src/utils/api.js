@@ -1,9 +1,7 @@
 export async function getNews(id) {
-    const apiKey = "cbcda5c90da24fa09c59e11cec3010a2";
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&max=10&apiKey=${apiKey}`;
+    const apiKey = "f9442b6ce8092c601193f0eda3b8c24d";
+    const apiUrl = ` https://gnews.io/api/v4/search?q=example&lang=en&country=ng&max=10&apikey=${apiKey}`;
 
-    // const apiKey = process.env.API_KEY;
-    // const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&max=10&apiKey=${apiKey}`;
 
     const res = await fetch(apiUrl);
     if (!res.ok) {
