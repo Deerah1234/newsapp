@@ -33,9 +33,9 @@ const News = () => {
     const newsDataElement = newsData.map((article, index) => (
         <section key={index} className="news-section">
             <figure className="news-img">
-                {article.image ? (
+                {article.urlToImage ? (
                     <>
-                        <img src={article.image} alt="" className="img" />
+                        <img src={article.urlToImage} alt="" className="img" />
                         <figcaption>Source: {article.source.name}</figcaption>
                     </>
                 ) : (
