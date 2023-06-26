@@ -1,5 +1,7 @@
 # NewsApp
 
+[![]](https://screenapp.io/app/#/shared/36051515-d1b4-49c4-88a3-d405ca926590)
+
 NewsApp is a web application built using React.js and Vite. It allows users to browse and read the latest news articles from various sources.
 
 ## Features
