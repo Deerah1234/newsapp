@@ -1,6 +1,10 @@
 # NewsApp
 
 [![]](https://screenapp.io/app/#/shared/36051515-d1b4-49c4-88a3-d405ca926590)
+<video width="640" height="360" controls>
+  <source src="https://screenapp.io/app/#/shared/36051515-d1b4-49c4-88a3-d405ca926590" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 NewsApp is a web application built using React.js and Vite. It allows users to browse and read the latest news articles from various sources.
 
