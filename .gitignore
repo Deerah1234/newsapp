@@ -26,3 +26,6 @@ dist-ssr
 # 
 src/utils/config.js
 roadmap.txt
+
+# Ignore .env file
+.env
