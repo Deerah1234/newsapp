@@ -9,7 +9,7 @@ import { getNews } from "../utils/api";
 
 import "animate.css";
 
-export function loader() {
+export async function loader() {
     return getNews();
 }
 
