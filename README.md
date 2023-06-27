@@ -1,5 +1,9 @@
 # NewsApp
 
+<p align="center">
+  <img src="https://github.com/Deerah1234/newsapp/assets/93952415/965b425d-e7f0-406c-bd65-1b298109cfda" alt="newsapp">
+</p>
+
 NewsApp is a web application built using React.js and Vite. It allows users to browse and read the latest news articles from various sources.
 
 ## Features
