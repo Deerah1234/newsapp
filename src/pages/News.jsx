@@ -30,7 +30,7 @@ const News = () => {
         return formattedTime;
     };
 
-    function renderNewsElements(newsData) {
+    const renderNewsElements = (newsData) => {
         const newsDataElement = newsData.map((article, index) => (
             <section key={index} className="news-section">
                 <figure className="news-img">
