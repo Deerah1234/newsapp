@@ -35,6 +35,8 @@ cd newsapp
 npm install
 ```
 
+4. Rename `.env-example` to `.env` and add your `API KEY`
+
 ## Usage
 
 1. Start the development server:
