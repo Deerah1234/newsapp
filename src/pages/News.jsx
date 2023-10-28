@@ -7,8 +7,6 @@ import TodayIcon from "@mui/icons-material/Today";
 import { useLoaderData, Link, defer, Await } from "react-router-dom";
 import { getNews } from "../utils/api";
 
-import "animate.css";
-
 export function loader() {
     return defer({ newsData: getNews() });
 }
